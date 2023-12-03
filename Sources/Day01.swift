@@ -10,24 +10,24 @@ struct Day01: AdventDay {
     }
 
     func part1() -> Any {
-        var total = 0
-        rows.forEach { row in
-            let numbers = row.filter(\.isNumber)
-            guard !numbers.isEmpty else { return }
-            total += Int(numbers.prefix(1) + numbers.suffix(1)) ?? 0
-        }
-        return total
+        rows
+            .compactMap { row in
+                let numbers = row.filter(\.isNumber)
+                guard !numbers.isEmpty else { return nil }
+                return Int(numbers.prefix(1) + numbers.suffix(1)) ?? 0
+            }
+            .reduce(0, +)
     }
 
     func part2() -> Any {
-        var total = 0
-        rows.forEach { row in
-            guard let first = firstNumber(in: row),
-                  let last = lastNumber(in: row)
-            else { return }
-            total += Int(first + last) ?? 0
-        }
-        return total
+        rows
+            .compactMap { row in
+                guard let first = firstNumber(in: row),
+                      let last = lastNumber(in: row)
+                else { return nil }
+                return Int(first + last) ?? 0
+            }
+            .reduce(0, +)
     }
 
     let words = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
@@ -39,7 +39,6 @@ struct Day01: AdventDay {
     
     private func firstNumber(in row: String) -> String? {
         var row = row
-        
         while !row.isEmpty {
             for (index, string) in search.enumerated() {
                 if row.hasPrefix(string) {
@@ -56,8 +55,7 @@ struct Day01: AdventDay {
     }
     
     private func lastNumber(in row: String) -> String? {
-        var row = row
-        
+        var row = row        
         while !row.isEmpty {
             for (index, string) in search.enumerated() {
                 if row.hasSuffix(string) {
