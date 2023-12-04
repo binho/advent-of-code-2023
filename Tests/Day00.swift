@@ -2,7 +2,7 @@ import XCTest
 
 @testable import AdventOfCode
 
-final class DayTemplateTests: XCTestCase {
+final class Day00Tests: XCTestCase {
     let testData1 = """
     """
 
@@ -10,12 +10,12 @@ final class DayTemplateTests: XCTestCase {
     """
     
     func testPart1() throws {
-        let challenge = DayTemplate(data: testData1)
+        let challenge = Day00(data: testData1)
         XCTAssertEqual(String(describing: challenge.part1()), "0")
     }
     
     func testPart2() throws {
-        let challenge = DayTemplate(data: testData2)
+        let challenge = Day00(data: testData2)
         XCTAssertEqual(String(describing: challenge.part2()), "0")
     }
 }

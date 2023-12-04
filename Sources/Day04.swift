@@ -1,4 +1,5 @@
 import Algorithms
+import Foundation
 
 struct Day04: AdventDay {
     var data: String
@@ -14,16 +15,16 @@ struct Day04: AdventDay {
             var parts = row.components(separatedBy: [":", "|"])
             parts.removeFirst()
 
-            guard let winning = parts.first?.components(separatedBy: .whitespaces).filter({ !$0.isEmpty }).compactMap({ Int($0) }),
-                  let scratched = parts.last?.components(separatedBy: .whitespaces).filter({ !$0.isEmpty }).compactMap({ Int($0) })
-            else { return 0 }
+            guard let winning = parse(parts.first), let scratched = parse(parts.last) else { return 0 }
 
-            var points = 1
+            //let matches = Set(winning).intersection(scratched).count
+
+            var points = 0
             for num in scratched where winning.contains(num) {
-                points = points << 1
+                //points = Int(pow(2, Double(matches - 1)))
+                points = points == 0 ? 1 : points << 1
             }
-            // Divide by 2 because we started with 1
-            return points / 2
+            return points
         }
         .reduce(0, +)
     }
@@ -37,10 +38,8 @@ struct Day04: AdventDay {
             .forEach { index, row in
                 var parts = row.components(separatedBy: [":", "|"])
                 parts.removeFirst()
-                
-                guard let winning = parts.first?.components(separatedBy: .whitespaces).filter({ !$0.isEmpty }).compactMap({ Int($0) }),
-                      let scratched = parts.last?.components(separatedBy: .whitespaces).filter({ !$0.isEmpty }).compactMap({ Int($0) })
-                else { return }
+
+                guard let winning = parse(parts.first), let scratched = parse(parts.last) else { return }
                 
                 var found = 0
                 for num in scratched where winning.contains(num) {
@@ -56,5 +55,14 @@ struct Day04: AdventDay {
             }
 
         return cards.reduce(0, +)
+    }
+    
+    // MARK: - Helpers
+    
+    private func parse(_ string: String?) -> [Int]? {
+        string?
+            .components(separatedBy: .whitespaces)
+            .filter { !$0.isEmpty }
+            .compactMap { Int($0) }
     }
 }

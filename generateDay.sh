@@ -10,10 +10,10 @@ fi
 
 echo "Creating $name..."
 
-cp Sources/DayTemplate.swift Sources/$name.swift
-cp Tests/DayTemplate.swift Tests/$name.swift
+cp Sources/Day00.swift Sources/$name.swift
+cp Tests/Day00.swift Tests/$name.swift
 touch Sources/Data/$name.txt
 
-sed -i '' "s/DayTemplate/${name}/g" Sources/$name.swift
-sed -i '' "s/DayTemplateTests/${nameTests}/g" Tests/$name.swift
-sed -i '' "s/DayTemplate/${name}/g" Tests/$name.swift
+sed -i '' "s/Day00/${name}/g" Sources/$name.swift
+sed -i '' "s/Day00Tests/${nameTests}/g" Tests/$name.swift
+sed -i '' "s/Day00/${name}/g" Tests/$name.swift

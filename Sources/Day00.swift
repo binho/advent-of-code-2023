@@ -1,6 +1,6 @@
 import Algorithms
 
-struct DayTemplate: AdventDay {
+struct Day00: AdventDay {
     var data: String
 
     var rows: [String] {
