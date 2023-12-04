@@ -43,10 +43,8 @@ struct Day04: AdventDay {
                 else { return }
                 
                 var found = 0
-                for num in scratched {
-                    if winning.contains(num) {
-                        found += 1
-                    }
+                for num in scratched where winning.contains(num) {
+                    found += 1
                 }
                 
                 guard found > 0 else { return }
