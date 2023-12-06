@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name=Day0$1
+name=Day$1
 nameTests=${name}Tests
 
 if test -f "Sources/$name.swift"; then
