@@ -1,4 +1,5 @@
 import Algorithms
+import Foundation
 
 struct Day00: AdventDay {
     var data: String
