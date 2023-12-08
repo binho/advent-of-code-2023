@@ -39,3 +39,8 @@ Part 1 took 0.000439875 seconds, part 2 took 0.000259 seconds.
 ```
 Part 1 took 0.061614792 seconds, part 2 took 0.060454625 seconds.
 ```
+## Day 8: Haunted Wasteland
+
+```
+Part 1 took 0.001871125 seconds, part 2 took 0.01767325 seconds.
+```
