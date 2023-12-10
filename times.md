@@ -44,3 +44,9 @@ Part 1 took 0.061614792 seconds, part 2 took 0.060454625 seconds.
 ```
 Part 1 took 0.001871125 seconds, part 2 took 0.01767325 seconds.
 ```
+
+## Day 9: Mirage Maintenance
+
+```
+Part 1 took 0.001584666 seconds, part 2 took 0.001608459 seconds
+```
