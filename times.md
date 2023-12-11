@@ -50,3 +50,9 @@ Part 1 took 0.001871125 seconds, part 2 took 0.01767325 seconds.
 ```
 Part 1 took 0.001584666 seconds, part 2 took 0.001608459 seconds
 ```
+
+## Day 10: Pipe Maze
+
+```
+Part 1 took 0.013377083 seconds, part 2 took 0.013125208 seconds.
+```
