@@ -112,7 +112,7 @@ struct Day10: AdventDay {
     }
 }
 
-extension StringProtocol {
+fileprivate extension StringProtocol {
     subscript(offset: Int) -> Character {
         self[index(startIndex, offsetBy: offset)]
     }

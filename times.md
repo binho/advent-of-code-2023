@@ -56,3 +56,9 @@ Part 1 took 0.001584666 seconds, part 2 took 0.001608459 seconds
 ```
 Part 1 took 0.013377083 seconds, part 2 took 0.013125208 seconds.
 ```
+
+## Day 11: Cosmic Expansion
+
+```
+Part 1 took 0.000454125 seconds, part 2 took 0.000383209 seconds.
+```
