@@ -62,3 +62,9 @@ Part 1 took 0.013377083 seconds, part 2 took 0.013125208 seconds.
 ```
 Part 1 took 0.000454125 seconds, part 2 took 0.000383209 seconds.
 ```
+
+## Day 12: Hot Springs
+
+```
+Part 1 took 0.072682459 seconds, part 2 took 0.776518625 seconds.
+```
