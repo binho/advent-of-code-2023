@@ -68,3 +68,9 @@ Part 1 took 0.000454125 seconds, part 2 took 0.000383209 seconds.
 ```
 Part 1 took 0.072682459 seconds, part 2 took 0.776518625 seconds.
 ```
+
+## Day 13: Point of Incidence
+
+```
+Part 1 took 0.00292575 seconds, part 2 took 0.003387958 seconds.
+```
