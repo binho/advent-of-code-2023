@@ -3,11 +3,13 @@ import Foundation
 
 struct Day00: AdventDay {
     var data: String
+    let rows: [String]
 
-    var rows: [String] {
-        data
+    init(data: String) {
+        self.data = data
+        self.rows = data
             .split(separator: "\n")
-            .map { String($0) }
+            .map(String.init)
     }
 
     func part1() -> Any {

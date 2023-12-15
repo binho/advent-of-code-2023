@@ -74,3 +74,10 @@ Part 1 took 0.072682459 seconds, part 2 took 0.776518625 seconds.
 ```
 Part 1 took 0.00292575 seconds, part 2 took 0.003387958 seconds.
 ```
+
+## Day 14: Parabolic Reflector Dish
+
+```
+Part 1 took 0.019971041 seconds, part 2 took 39.712498959 seconds.
+```
+(Part 2 needs improvements!)
