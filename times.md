@@ -81,3 +81,9 @@ Part 1 took 0.00292575 seconds, part 2 took 0.003387958 seconds.
 Part 1 took 0.019971041 seconds, part 2 took 39.712498959 seconds.
 ```
 (Part 2 needs improvements!)
+
+## Day 15: Lens Library 
+
+```
+Part 1 took 0.001216333 seconds, part 2 took 0.058783417 seconds.
+```
